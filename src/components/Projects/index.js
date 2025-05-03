@@ -4,6 +4,7 @@ import React from 'react';
 import chatsitevideo from './Recording 2025-03-17 153405.mp4'
 import video from './Recording 2025-03-17 151400.mp4';
 import fullstack from '../Img/photo-1667372283536-a832e74401c2.avif';
+import realestate from './realestate.mp4'
 import gymsite from './gymsite.mp4';
 import './projects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -78,14 +79,28 @@ const Projects = () => {
               </a>
             </div>
           </div>
-
           <div className="service">
-            <h3>Full-Stack Development</h3>
+            <h3>Real estate</h3>
             <div className="service-content">
-              <img src={fullstack} alt="Full-Stack Development Icon" />
-              <p>Develop complete solutions with front-end and back-end integration.</p>
+              <video src={realestate} autoPlay muted loop width="300" height="200">
+                Your browser does not support the video tag.
+              </video>
+              <p>
+                A modern and responsive realestate website designed to showcase land near users ,agent, properties on low cost with land.
+                Built with a clean UI and smooth navigation, it offers users an engaging platform to explore realestate features and connect with agent
+              </p>
+              <a
+                href="https://realestate-drhq.onrender.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="visit-btn"
+              >
+                Visit Site <FontAwesomeIcon icon={faUpRightFromSquare} />
+              </a>
             </div>
           </div>
+
+          
           <div className="service">
             <h3>Full-Stack Development</h3>
             <div className="service-content">
