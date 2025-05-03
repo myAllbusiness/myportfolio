@@ -1,0 +1,119 @@
+.footer {
+    background-color: #042f2fc7;
+    color: #fff;
+    padding: 40px 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .thank-you {
+    flex: 1;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .contact-languages {
+    flex: 2 0;
+    padding: 14vmin;
+  }
+  
+  .contact-info p,
+  .languages p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .contact-info p strong  ,
+  .languages p strong {
+    color: #48dbdb;
+  }
+  
+  /* Image in Footer */
+  footer img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Contact and Languages Section Styling */
+  .contact-info {
+    flex: 1;
+  }
+  
+  .languages {
+  display: flex;
+  }
+  
+  .languages hr {
+    border: 1px solid #24af93;
+    margin: 9px 5px;
+    height: 1rem;
+  }
+  
+  /* Go Up Arrow Styling */
+  .go-up {
+    position: relative;
+    color: #ffcb00;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+  
+  .go-up:hover {
+    background-color: #333;
+    color: #ffcb00;
+    transform: translateY(-5px);
+  }
+  
+  .go-up:active {
+    transform: translateY(0);
+  }
+  
+  .go-up i {
+    font-size: 1.9rem;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .thank-you {
+      margin-bottom: 20px;
+    }
+  
+    .contact-languages {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .go-up {
+      right: 15px;
+      bottom: 15px;
+    }
+  }
+  @media (max-width: 420px){
+    .map-container{
+     overflow: hidden;
+    }
+  }

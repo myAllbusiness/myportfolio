@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.maincontainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    filter: blur(1px);
+    text-transform: uppercase;
+}
+
+.banner p {
+    font-size: 10rem;
+    letter-spacing: 25px;
+    color: black;
+    text-shadow: 0px 0px 59px #4ddedcfa;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 24rem;
+}
+
+.myprofile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.mainprfile {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin-top: 4rem;
+    height: 100vh;
+}
+
+.procontainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+img {
+    height: 60vmin;
+ 
+    border-radius: 31%;
+    
+}
+
+h2, h1 {
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 13px;
+}
+
+p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+button {
+    color: white;
+    background-color: #0a3e3c;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 3px solid rgb(13, 60, 101);
+    box-shadow: 0px 0px 11px #158480;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+
+.idlink a{
+    width: 6vmin;
+}
+
+
+/* Bounce animation */
+@keyframes bounce-top {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-5%);
+    }
+}
+
+
+.profileidlink {
+    display: inline-flex;
+    list-style: none;
+    height: 7.5vmin;
+    justify-content: space-around; /* Optional: space out items evenly */
+}
+
+/* Styling for all idlink items */
+.idlink {
+    margin-inline: 2vmin;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* WhatsApp-specific styles (1st item) */
+.profileidlink .idlink:nth-child(1) .fa-whatsapp {
+    font-size: 6vmin;
+    color: #000000; /* Black color */
+    filter: drop-shadow(0 0 6px #25D366); /* Green drop shadow */
+}
+
+.profileidlink .idlink:nth-child(1):hover .fa-whatsapp {
+    color: #000000;
+    filter: drop-shadow(0 0 8px #128C7E); /* Darker green drop shadow on hover */
+    transform: scale(1.1);
+}
+
+/* LinkedIn-specific styles (2nd item) */
+.profileidlink .idlink:nth-child(2) .fa-linkedin {
+    font-size: 6vmin;
+    color: #000000; /* Black color */
+    filter: drop-shadow(0 0 6px #0A66C2); /* Blue drop shadow */
+}
+
+.profileidlink .idlink:nth-child(2):hover .fa-linkedin {
+    color: #000000;
+    filter: drop-shadow(0 0 8px #004182); /* Darker blue drop shadow on hover */
+    transform: scale(1.1);
+}
+
+/* GitHub-specific styles (3rd item) */
+.profileidlink .idlink:nth-child(3) .fa-github {
+    font-size: 6vmin;
+    color: #000000; /* Black color */
+    filter: drop-shadow(0 0 6px #333); /* GitHub gray drop shadow */
+}
+
+.profileidlink .idlink:nth-child(3):hover .fa-github {
+    color: #000000;
+    filter: drop-shadow(0 0 8px #6e5494); /* Darker gray drop shadow on hover */
+    transform: scale(1.1);
+}
+
+/* Facebook-specific styles (4th item) */
+.profileidlink .idlink:nth-child(4) .fa-facebook {
+    font-size: 6vmin;
+    color: #000000; /* Black color */
+    filter: drop-shadow(0 0 6px #1877F2); /* Facebook blue drop shadow */
+}
+
+.profileidlink .idlink:nth-child(4):hover .fa-facebook {
+    color: #000000;
+    filter: drop-shadow(0 0 8px #3b5998); /* Darker blue drop shadow on hover */
+    transform: scale(1.1);
+}
+
+/* Styling for the text span elements */
+.idlink span {
+    font-size: 12px;
+    margin-top: 1vmin;
+    opacity: 0;
+}
+
+/* Hover effect for the entire idlink */
+.idlink:hover {
+    transform: scale(1.1);
+}
+
+
+.second_procontaier {
+    font-size: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 2rem;
+}
+
+.second_procontaier p {
+    color: black;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px green;
+}
+
+.btn {
+    background-color: rgb(26, 74, 74);
+    color: black;
+    box-shadow: 0 0 4px white;
+    margin-bottom: 3rem;
+}
+.maincontainer{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.animated-text{
+    text-transform: uppercase;
+    width: 100%;
+    display: inline;
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    filter: blur(1px);
+}
+.animated-text span{
+    font-size: 25.5vmin;
+    letter-spacing: 25px;
+    color: black;
+    text-shadow: 0px 0px 59px #4ddedcfa;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 15rem;
+    animation: animate 2s ease initial;
+  
+}
+
+.space{
+    width: 25px;
+}
+
+.animated-text span:nth-child(1) { -webkit-animation: bounce-in-bck 0.1s both; animation: bounce-in-bck 0.1s both; }
+.animated-text span:nth-child(2) { -webkit-animation: bounce-in-bck 0.3s both; animation: bounce-in-bck 0.3s both; }
+.animated-text span:nth-child(3) { -webkit-animation: bounce-in-bck 0.5s both; animation: bounce-in-bck 0.5s both; }
+.animated-text span:nth-child(4) { -webkit-animation: bounce-in-bck 0.7s both; animation: bounce-in-bck 0.7s both; }
+.animated-text span:nth-child(5) { -webkit-animation: bounce-in-bck 0.9s both; animation: bounce-in-bck 0.9s both; }
+.animated-text span:nth-child(6) { -webkit-animation: bounce-in-bck 1.1s both; animation: bounce-in-bck 1.1s both; }
+.animated-text span:nth-child(7) { -webkit-animation: bounce-in-bck 1.3s both; animation: bounce-in-bck 1.3s both; }
+.animated-text span:nth-child(8) { -webkit-animation: bounce-in-bck 1.5s both; animation: bounce-in-bck 1.5s both; }
+.animated-text span:nth-child(9) { -webkit-animation: bounce-in-bck 1.7s both; animation: bounce-in-bck 1.7s both; }
+.animated-text span:nth-child(10) { -webkit-animation: bounce-in-bck 1.9s both; animation: bounce-in-bck 1.9s both; }
+
+  @keyframes bounce-in-bck {
+    0% {
+      -webkit-transform: scale(7);
+              transform: scale(7);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    38% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+    55% {
+      -webkit-transform: scale(1.5);
+              transform: scale(1.5);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    72% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    81% {
+      -webkit-transform: scale(1.24);
+              transform: scale(1.24);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    89% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    95% {
+      -webkit-transform: scale(1.04);
+              transform: scale(1.04);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
+.material-symbols-outlined {
+    font-size: 40px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.procontainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#introline{
+    margin: 0 20vmin;
+    text-align: center;
+}
+img{
+    height: 60vmin;
+    border-radius: 31%;
+}
+hr{
+  width: 0%;
+  height: 23rem;
+  margin-inline: 2rem;
+}
+h2,h1,h3{
+    line-height: 1;
+    text-transform: uppercase;
+    margin: 13px;
+	animation: focus-in-contract-bck 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+p{
+    line-gap-override: 2px;
+    animation: focus-in-contract-bck 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+  @keyframes focus-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      -webkit-transform: translateZ(300px);
+              transform: translateZ(300px);
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(12px);
+              transform: translateZ(12px);
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+button{
+    background-color: #0a3e3c;
+    padding: 7px;
+    border-radius: 4px;
+    border: 3px solid rgb(13 60 101);
+    box-shadow: 0px 0px 11px #158480;
+    text-transform: uppercase;
+    font-weight: 700;
+    word-spacing: 1vmin;
+    margin: 4vmin;
+    animation: bounce-top 2s both ;
+    animation-delay: 3.8s;      
+}
+button:hover{
+  padding: 8px;
+}
+  @keyframes bounce-top {
+    0% {
+      -webkit-transform: translateY(-45px);
+              transform: translateY(-45px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+      opacity: 0;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+      -webkit-transform: translateY(-24px);
+              transform: translateY(-24px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    65% {
+      -webkit-transform: translateY(-12px);
+              transform: translateY(-12px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    82% {
+      -webkit-transform: translateY(-6px);
+              transform: translateY(-6px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    93% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+      opacity: 1;
+    }
+  }
+  
+button a{
+    text-decoration: none;
+    color: #d2cece;
+    transition: background-color 0.3s;
+}
+/* General styling for Font Awesome icons */

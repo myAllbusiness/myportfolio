@@ -1,0 +1,60 @@
+.animated-text {
+    text-transform: uppercase;
+    width: 100%;
+    display: inline;
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    filter: blur(1px);
+    flex-direction: column;
+    margin-left: 8vmin;
+}
+.animated-text span {
+    font-size: 7.5vmin;
+    /* letter-spacing: 5px; */
+    color: #413b3b;
+    text-shadow: 0px 0px 2px #c2d8d8fa;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+    animation: animate 2s ease initial;
+}
+.about-me-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.about-me-section img {
+    height: 60vmin;
+    filter: drop-shadow(0px 0px 6px #4ddedcfa);
+    border-radius: 1%;
+    margin: 0;
+}
+hr {
+    width: 72%;
+    height: 0rem;
+    /* margin-inline: -1rem; */
+    margin: 7vmin 0;
+}
+@media (max-width: 768px) {
+    .skill {
+        width: 100px;
+        padding: 15px;
+    }
+}
+
+.popup-content{
+   max-width: 85%;
+}
+#introline {
+    margin: 0 20vmin;
+    height: 16vmin;
+    text-align: center;
+    text-wrap: wrap;
+    overflow: hidden;
+}
+
+
+
+

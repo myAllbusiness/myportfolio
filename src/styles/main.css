@@ -1,0 +1,336 @@
+/* src/styles/main.css */
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* Font style for the body */
+  line-height: 1.6;
+  /* Line height for better readability */
+  background-color: #020202;
+  /* Light background color */
+  color: #ffffff;
+  /* Dark text color */
+
+}
+
+
+
+
+nav ul {
+  list-style: none;
+  /* Remove bullet points from the list */
+}
+
+nav ul li {
+  display: inline;
+  /* Display list items inline */
+  margin: 0 15px;
+  /* Margin between the list items */
+}
+
+
+
+
+main {
+  padding: 20px;
+  /* Padding for main content area */
+}
+
+p {
+  margin: 8px 0;
+  line-height: 1.6;
+  font-size: 1.125rem;
+  /* text-lg */
+  color: #718096;
+  /* Light gray */
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  /* Margin between sections */
+  /* White background for sections */
+  padding: 20px;
+  /* Padding for sections */
+  border-radius: 8px;
+  /* Rounded corners for sections */
+  /* Subtle shadow effect */
+}
+
+footer {
+  background: #333;
+  /* Dark background for footer */
+  color: #fff;
+  /* White text color in the footer */
+  text-align: center;
+  /* Center align the text */
+  padding: 15px 0;
+  /* Padding for footer */
+  position: relative;
+  /* Position footer normally */
+  bottom: 0;
+  /* Align footer to the bottom */
+  width: 100%;
+  /* Full width footer */
+}
+
+
+
+body.sunny {
+  background-color: #ffffff;
+}
+
+body.sunny {
+  color: #000000;
+}
+
+
+
+body.sunny .fa-whatsapp,
+body.sunny .fa-linkedin,
+body.sunny .fa-github,
+body.sunny .fa-facebook {
+  color: #ecf0f1;
+}
+
+body.sunny nav a {
+  color: black;
+}
+
+body.sunny .animated-text span {
+  color: white;
+  text-shadow: 0px 0px 59px #007473fa;
+}
+
+body.sunny .profileidlink .idlink:nth-child(1) .fa-whatsapp {
+  font-size: 6vmin;
+  color: #25d366;
+  filter: drop-shadow(0 0 1px #25D366);
+}
+
+body.sunny .profileidlink .idlink:nth-child(2) .fa-linkedin {
+  font-size: 6vmin;
+  color: #0c65c2;
+  ;
+  filter: drop-shadow(0 0 1px #0A66C2);
+}
+
+body.sunny .profileidlink .idlink:nth-child(3) .fa-github {
+  font-size: 6vmin;
+  color: #110e0e;
+  filter: drop-shadow(0 0 1px #333);
+}
+
+body.sunny .profileidlink .idlink:nth-child(4) .fa-facebook {
+  font-size: 6vmin;
+  color: #2896ed;
+  filter: drop-shadow(0 0 1px #1877F2);
+}
+
+body.sunny .popup-content {
+  background: #d0e4ea;
+
+}
+
+button {
+  color: white;
+  background-color: #0a3e3c;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 3px solid rgb(13, 60, 101);
+  box-shadow: 0px 0px 11px #158480;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+p {
+  text-align: justify;
+}
+
+@media(max-width:420px) {
+  h1{
+    color: #5a67d8;
+  }
+  .logo img {
+    height: 26vmin;
+  }
+  .idlink {
+    margin-top: 10vmin;
+  }
+  .profileidlink .idlink:nth-child(1) .fa-whatsapp {
+    font-size: 10vmin;
+  }
+  .profileidlink .idlink:nth-child(2) .fa-linkedin {
+    font-size: 10vmin;
+  }
+  .profileidlink .idlink:nth-child(3) .fa-github {
+    font-size: 10vmin;
+  }
+  .profileidlink .idlink:nth-child(4) .fa-facebook {
+    font-size: 10vmin;
+  }
+  .mainprfile {
+    margin-top: 0;
+  }
+
+  .education-item, .skills-item {
+    width: 100%;
+  }
+
+  .close-btn {
+    top: -5px;
+    right: 46vmin;
+    font-size: 2.9em;
+  }
+
+  .listof {
+    position: absolute;
+    top: 0px;
+    right: 0vmin;
+    background: #82acb7;
+    width: 100%;
+    padding: 11vmin;
+  }
+
+  list {
+    margin: 2vmin 0;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    font-weight: bolder;
+    color: white;
+    animation: bounce-top 1.5s both;
+    animation-delay: 0.3s;
+  }
+
+  svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+
+    font-size: 4vmin;
+  }
+
+  body.sunny .animated-text span {
+    color: white;
+    text-shadow: 0px 0px 6px #007473fa;
+  }
+
+  .animated-text {
+    width: 100%;
+    display: inline;
+    position: absolute;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+    filter: blur(1px);
+    flex-direction: column;
+    align-items: baseline;
+    padding: 5vmin;
+  }
+
+  .animated-text span {
+    font-size: 7.5vmin;
+    /* letter-spacing: 5px; */
+    color: #413b3b;
+    text-shadow: 0px 0px 2px #c2d8d8fa;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 1rem;
+    animation: animate 2s ease initial;
+  }
+
+  .about-me-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-header-side{
+    display: block;
+    background-color: unset;
+    padding: 0;
+  }
+  .about-me-text p {
+    padding: 0;
+  
+  }
+  .about-me-text h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0rem;
+  }
+  .about-me-section img {
+    height: 60vmin;
+    filter: drop-shadow(0px 0px 6px #4ddedcfa);
+    border-radius: 1%;
+    margin: 0;
+  }
+
+  hr {
+    width: 72%;
+    height: 0rem;
+    /* margin-inline: -1rem; */
+    margin: 7vmin 0;
+  }
+
+  .skills-container {
+    padding: 2vmin 4vmin;
+    gap: 1px 28px;
+  }
+
+  .skills {
+
+    padding: 12vmin 6vmin;
+  }
+
+  .contact {
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 4rem;
+    margin-bottom: 25vmin;
+
+  }
+
+  form {
+    margin: 2vmin;
+  }
+
+  input, textarea {
+    width: 71vmin;
+  }
+  .about-header{
+    padding: 0rem 1rem;
+    text-align: left;
+  }
+  @media (max-width: 768px) {
+    .skill {
+      width: 100px;
+      padding: 15px;
+    }
+  }
+
+  .popup-content {
+    max-width: 85%;
+  }
+
+  #introline {
+    margin: 0 20vmin;
+    height: 16vmin;
+    text-align: center;
+    text-wrap: wrap;
+    overflow: hidden;
+  }
+
+}
